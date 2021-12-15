@@ -3,6 +3,10 @@
   font-style: inherit;
   padding-top: 60px;
   padding-bottom: 60px;
+  & > .container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-item {
@@ -15,10 +19,7 @@
   margin-bottom: 9px;
   display: flex;
 }
-.footer > .container {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-logos {
   font-family: Raleway;
   font-weight: 700;
@@ -34,19 +35,19 @@
   color: var(--second-text-color);
   display: inline-block;
   transition: color var(--ms--cubic);
-}
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--main-button-color);
+  &:hover,
+  &:focus {
+    color: var(--main-button-color);
+  }
 }
 
 .footer-tel {
   color: var(--second-text-color);
   transition: color var(--ms--cubic);
-}
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--main-button-color);
+  &:hover,
+  &:focus {
+    color: var(--main-button-color);
+  }
 }
 
 .footer-social-list {
@@ -56,6 +57,9 @@
 .footer-social-item {
   width: 44px;
   height: 44px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 .logo-adress-social {
   margin-left: 70px;
@@ -63,9 +67,7 @@
 .modal-adress-social {
   margin-left: auto;
 }
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
-}
+
 .footer-social-title {
   font-style: normal;
   font-weight: bold;
@@ -91,9 +93,8 @@
 
 .footer-social-icon {
   fill: currentColor;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--main-button-color);
+  &:hover,
+  &:focus {
+    background-color: var(--main-button-color);
+  }
 }

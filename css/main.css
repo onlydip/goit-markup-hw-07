@@ -89,8 +89,7 @@ body {
   transition: background-color var(--ms--cubic), border-radius var(--ms--cubic), box-shadow var(--ms--cubic);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:hover, .hero-btn:focus {
   background-color: var(--button-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -196,8 +195,7 @@ body {
   justify-content: center;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover, .modal-close:focus {
   fill: var(--main-button-color);
 }
 
@@ -241,6 +239,10 @@ body {
   transition: border-color var(--ms--cubic);
 }
 
+.modal-input:focus + .input-icon {
+  fill: var(--main-button-color);
+}
+
 .modal-input-email {
   width: 358px;
   height: 50px;
@@ -260,12 +262,7 @@ body {
   border-color: var(--main-button-color);
 }
 
-.modal-input:focus + .input-icon {
-  fill: var(--main-button-color);
-}
-
-.modal-input:focus,
-.modal-text:focus {
+.modal-input-email:focus {
   border-color: var(--main-button-color);
 }
 
@@ -290,6 +287,10 @@ body {
   background-color: transparent;
   color: var(--second-tittle-color);
   transition: border-color var(--ms--cubic);
+}
+
+.modal-text:focus {
+  border-color: var(--main-button-color);
 }
 
 .modal-text::placeholder {
@@ -461,8 +462,7 @@ body {
   transition: color var(--ms--cubic);
 }
 
-.header-link:hover,
-.header-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--main-button-color);
 }
 
@@ -482,8 +482,7 @@ body {
   transition: color var(--ms--cubic);
 }
 
-.header-mail:hover,
-.header-mail:focus {
+.header-mail:hover, .header-mail:focus {
   color: var(--main-button-color);
 }
 
@@ -492,8 +491,7 @@ body {
   transition: color var(--ms--cubic);
 }
 
-.header-tel:hover,
-.header-tel:focus {
+.header-tel:hover, .header-tel:focus {
   color: var(--main-button-color);
 }
 
@@ -589,8 +587,7 @@ body {
   transition: background-color var(--ms--cubic), border-radius var(--ms--cubic), box-shadow var(--ms--cubic);
 }
 
-.hero-btn-input:hover,
-.hero-btn-input:focus {
+.hero-btn-input:hover, .hero-btn-input:focus {
   background-color: var(--button-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -803,14 +800,13 @@ body {
   transition: color var(--ms--cubic), background-color var(--ms--cubic);
 }
 
-.masters-social-icon {
-  fill: currentColor;
-}
-
-.masters-social-link:hover,
-.masters-social-link:focus {
+.masters-social-link:hover, .masters-social-link:focus {
   background-color: var(--main-button-color);
   color: var(--aftermain-color);
+}
+
+.masters-social-icon {
+  fill: currentColor;
 }
 
 .clients {
@@ -862,8 +858,7 @@ body {
   transition: color var(--ms--cubic), border var(--ms--cubic);
 }
 
-.clients-item-link:hover,
-.clients-item-link:focus {
+.clients-item-link:hover, .clients-item-link:focus {
   color: var(--main-button-color);
   border: 1px solid #2196f3;
 }
@@ -875,6 +870,11 @@ body {
   padding-bottom: 60px;
 }
 
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-item {
   font-weight: 400;
   font-size: 14px;
@@ -884,11 +884,6 @@ body {
   font-style: normal;
   margin-bottom: 9px;
   display: flex;
-}
-
-.footer > .container {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-logos {
@@ -910,8 +905,7 @@ body {
   transition: color var(--ms--cubic);
 }
 
-.footer-mail:hover,
-.footer-mail:focus {
+.footer-mail:hover, .footer-mail:focus {
   color: var(--main-button-color);
 }
 
@@ -920,8 +914,7 @@ body {
   transition: color var(--ms--cubic);
 }
 
-.footer-tel:hover,
-.footer-tel:focus {
+.footer-tel:hover, .footer-tel:focus {
   color: var(--main-button-color);
 }
 
@@ -934,16 +927,16 @@ body {
   height: 44px;
 }
 
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+
 .logo-adress-social {
   margin-left: 70px;
 }
 
 .modal-adress-social {
   margin-left: auto;
-}
-
-.footer-social-item + .footer-social-item {
-  margin-left: 10px;
 }
 
 .footer-social-title {
@@ -973,8 +966,7 @@ body {
   fill: currentColor;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-icon:hover, .footer-social-icon:focus {
   background-color: var(--main-button-color);
 }
 
@@ -990,9 +982,7 @@ body {
   transition: color var(--ms--cubic), background var(--ms--cubic), box-shadow var(--ms--cubic);
 }
 
-.main-btn:hover,
-.main-btn:active,
-.main-btn:focus {
+.main-btn:hover, .main-btn:active, .main-btn:focus {
   color: var(--main-title-color);
   background: var(--main-button-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1044,8 +1034,7 @@ body {
   transition: box-shadow var(--ms--cubic), transform var(--ms--cubic);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

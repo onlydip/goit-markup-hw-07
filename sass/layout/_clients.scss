@@ -43,10 +43,9 @@
   align-items: center;
   justify-content: center;
   transition: color var(--ms--cubic), border var(--ms--cubic);
-}
-
-.clients-item-link:hover,
-.clients-item-link:focus {
-  color: var(--main-button-color);
-  border: 1px solid #2196f3;
+  &:hover,
+  &:focus {
+    color: var(--main-button-color);
+    border: 1px solid #2196f3;
+  }
 }

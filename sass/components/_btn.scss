@@ -16,14 +16,14 @@
   min-width: 200px;
   transition: background-color var(--ms--cubic), border-radius var(--ms--cubic),
     box-shadow var(--ms--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--button-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--button-color);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 .mains-btn {
   font-family: inherit;
   border-radius: 4px;

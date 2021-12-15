@@ -70,10 +70,9 @@
 .masters-social-item {
   width: 44px;
   height: 44px;
-}
-
-.masters-social-item + .masters-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 
 .masters-social-link {
@@ -86,14 +85,13 @@
   background-color: var(--main-title-color);
   color: var(--social-icon);
   transition: color var(--ms--cubic), background-color var(--ms--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--main-button-color);
+    color: var(--aftermain-color);
+  }
 }
 
 .masters-social-icon {
   fill: currentColor;
-}
-
-.masters-social-link:hover,
-.masters-social-link:focus {
-  background-color: var(--main-button-color);
-  color: var(--aftermain-color);
 }

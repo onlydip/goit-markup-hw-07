@@ -32,11 +32,11 @@
 
 .premain-item {
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-.premain-item:last-child {
-  margin-right: 0px;
-}
 .first-title {
   font-weight: 700;
   font-size: 14px;
