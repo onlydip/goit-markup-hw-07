@@ -2,7 +2,7 @@
   padding-bottom: 94px;
 }
 
-.maintitle {
+.main__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -11,19 +11,19 @@
   color: var(--second-tittle-color);
   margin-bottom: 50px;
 }
-.mainlist {
+.main-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
-.mainitem {
+.main-list__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
   position: relative;
 }
-.main-text {
+.main-list__text {
   position: absolute;
   bottom: 0;
   left: 0;

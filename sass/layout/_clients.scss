@@ -18,18 +18,18 @@
   margin-right: -30px;
   justify-content: center;
 }
-.clients-item {
+.clients-list__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-right: 30px;
 }
 
-.clients-item-icon {
+.clients-list__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
 
-.clients-item-link {
+.clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -9,7 +9,7 @@
   align-items: center;
   margin-left: auto;
 }
-.header-navigation {
+.header-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -31,18 +31,23 @@
   margin-bottom: 20px;
   display: flex;
 }
-.header-item {
+.header-list__item {
   margin-right: 50px;
   &:last-child {
     margin-right: 0;
   }
 }
-
+.header-contacts__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
 .header-logos {
   color: var(--second-tittle-color);
 }
 
-.header-link {
+.header-list__link {
   color: var(--second-tittle-color);
 
   transition: color var(--ms--cubic);
@@ -62,7 +67,7 @@
   left: 0;
   bottom: -3px;
 }
-.header-mail {
+.header-contacts__mail {
   color: var(--first-text-color);
   transition: color var(--ms--cubic);
   &:hover,
@@ -71,7 +76,7 @@
   }
 }
 
-.header-tel {
+.header-contacts__tel {
   color: var(--first-text-color);
   transition: color var(--ms--cubic);
   &:hover,
